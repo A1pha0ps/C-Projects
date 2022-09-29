@@ -1,0 +1,72 @@
+VERBOSE P5 Printout for CS 3410
+----------------------------------
+Trace          trace.2t.tiny.txt
+Instruction Limit     none
+ *** Cache Configuration ***
+capacity           65536 B
+block_size            16 B
+associativity         2-way
+n_set             2048
+n_cache_line     4096
+tag: 17, index: 11, offset: 4
+Coherence Protocol:     vi
+lru_on_invalidate_f:     false
+Processing trace...
+2 1
+0 r e6d83ef0 --> {blk: e6d83ef0} miss ==> [set:1007][way:0](V,clean)
+0 r e6d83ef8 --> {blk: e6d83ef0}  hit ==> [set:1007][way:0](V,clean)
+0 w e6d83ef8 --> {blk: e6d83ef0}  hit ==> [set:1007][way:0](V,dirty)
+0 w e6d83ef0 --> {blk: e6d83ef0}  hit ==> [set:1007][way:0](V,dirty)
+0 w e6d83ee8 --> {blk: e6d83ee0} miss ==> [set:1006][way:0](V,dirty)
+0 w e6d83ee0 --> {blk: e6d83ee0}  hit ==> [set:1006][way:0](V,dirty)
+0 r e6d84668 --> {blk: e6d84660} miss ==> [set:1126][way:0](V,clean)
+0 w e6d83ed8 --> {blk: e6d83ed0} miss ==> [set:1005][way:0](V,dirty)
+0 r e7323fb0 --> {blk: e7323fb0} miss ==> [set:1019][way:0](V,clean)
+0 w e6d845a0 --> {blk: e6d845a0} miss ==> [set:1114][way:0](V,dirty)
+0 w e6d83e58 --> {blk: e6d83e50} miss ==> [set: 997][way:0](V,dirty)
+0 r e73241f8 --> {blk: e73241f0} miss ==> [set:1055][way:0](V,clean)
+1 r e5c4eef0 --> {blk: e5c4eef0} miss ==> [set:1775][way:0](V,clean)
+1 r e5c4eef8 --> {blk: e5c4eef0}  hit ==> [set:1775][way:0](V,clean)
+1 w e5c4eef8 --> {blk: e5c4eef0}  hit ==> [set:1775][way:0](V,dirty)
+1 w e5c4eef0 --> {blk: e5c4eef0}  hit ==> [set:1775][way:0](V,dirty)
+1 w e5c4eee8 --> {blk: e5c4eee0} miss ==> [set:1774][way:0](V,dirty)
+1 w e5c4eee0 --> {blk: e5c4eee0}  hit ==> [set:1774][way:0](V,dirty)
+1 r e5c4f668 --> {blk: e5c4f660} miss ==> [set:1894][way:0](V,clean)
+1 w e5c4eed8 --> {blk: e5c4eed0} miss ==> [set:1773][way:0](V,dirty)
+Processed 20 lines.
+    *** Results for Core 0 ***
+0.n_cpu_accesses     12
+0.n_loads         5
+0.n_stores         7
+0.n_hits         4
+0.n_misses         8
+0.hit_rate         33.33
+0.miss_rate         66.67
+0.n_upgrade_miss     0
+0.n_bus_snoops     4
+0.n_snoop_hits     0
+0.n_writebacks     0
+Memory Traffic:
+0.B_written_bus_to_cache     128
+0.B_written_cache_to_bus_wb     0
+0.B_written_cache_to_bus_wt     28
+0.B_total_traffic_wb     128
+0.B_total_traffic_wt     156
+    *** Results for Core 1 ***
+1.n_cpu_accesses     8
+1.n_loads         3
+1.n_stores         5
+1.n_hits         4
+1.n_misses         4
+1.hit_rate         50.00
+1.miss_rate         50.00
+1.n_upgrade_miss     0
+1.n_bus_snoops     8
+1.n_snoop_hits     0
+1.n_writebacks     0
+Memory Traffic:
+1.B_written_bus_to_cache     64
+1.B_written_cache_to_bus_wb     0
+1.B_written_cache_to_bus_wt     20
+1.B_total_traffic_wb     64
+1.B_total_traffic_wt     84

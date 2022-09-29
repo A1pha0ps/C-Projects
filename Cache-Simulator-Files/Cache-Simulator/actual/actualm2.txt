@@ -1,0 +1,53 @@
+P5 Printout for CS 3410
+----------------------------------
+Trace  		trace.2t.short.txt
+Instruction Limit 	1542
+ *** Cache Configuration *** 
+capacity   		 4096 B
+block_size 		   64 B
+associativity 		2-way
+n_set 			32
+n_cache_line 	64
+tag: 21, index: 5, offset: 6
+Coherence Protocol: 	none
+lru_on_invalidate_f: 	false
+Processing trace...
+2 0
+Reached insn limit of 1542. Ending Simulation...
+Processed 1542 lines.
+    *** Results for Core 0 ***
+0.n_cpu_accesses 	1000
+0.n_loads 		639
+0.n_stores 		361
+0.n_hits 		802
+0.n_misses 		198
+0.hit_rate 		80.20
+0.miss_rate 		19.80
+0.n_upgrade_miss 	0
+0.n_bus_snoops 	67
+0.n_snoop_hits 	17
+0.n_writebacks 	27
+Memory Traffic:
+0.B_written_bus_to_cache 	12672
+0.B_written_cache_to_bus_wb 	1728
+0.B_written_cache_to_bus_wt 	1444
+0.B_total_traffic_wb 	14400
+0.B_total_traffic_wt 	14116
+    *** Results for Core 1 ***
+1.n_cpu_accesses 	542
+1.n_loads 		323
+1.n_stores 		219
+1.n_hits 		475
+1.n_misses 		67
+1.hit_rate 		87.64
+1.miss_rate 		12.36
+1.n_upgrade_miss 	0
+1.n_bus_snoops 	198
+1.n_snoop_hits 	10
+1.n_writebacks 	7
+Memory Traffic:
+1.B_written_bus_to_cache 	4288
+1.B_written_cache_to_bus_wb 	448
+1.B_written_cache_to_bus_wt 	876
+1.B_total_traffic_wb 	4736
+1.B_total_traffic_wt 	5164
